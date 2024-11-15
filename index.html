@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Salon Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>Salon Booking</h1>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<header class="hero">
+    <h1>Welcome to Our Salon</h1>
+    <p>Your beauty is our priority!</p>
+</header>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <h2 style="font-family:Georgia" ;>Our Services</h2>
+    <div class="service">
+        <h3>Haircut</h3>
+        <p>Get a stylish haircut from our professional stylists.</p>
+    </div>
+    <div class="service">
+        <h3>Facial</h3>
+        <p>Relax and rejuvenate with our facial treatments.</p>
+    </div>
+    <div class="service">
+        <h3>Manicure</h3>
+        <p>Pamper your hands with our manicure services.</p>
+    </div>
+    <div class="service">
+        <h3>Spa & Massage</h3>
+        <p>Feel the stress melt away with a massage.</p>
+    </div>
+</section>
+
+<!-- Booking Section -->
+<section id="booking" class="booking">
+    <h2>Book Your Appointment</h2>
+
+    <form id="booking-form">
+        <label for="service" style="font-family: Georgia; margin-top: 5%;">Which service do you like?</label>
+        <select id="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="hair-treatment">Hair Treatment</option>
+            <option value="hair-cut">Hair Cut</option>
+            <option value="hair-dyes">Hair Dyes</option>
+            <option value="hair-stright/curl/extension and ...">Hair-stright/curl/extension and ...</option>
+            <option value="nails">Nails</option>
+            <option value="Facial">Facial</option>
+            <option value="spa/Massage">Spa/Massage</option>
+            <option value="Manicure">Manicure</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+        
+        <textarea id="message" placeholder="Additional Requests"></textarea>
+        <button type="submit">Book Now</button>
+    </form>
+
+    <!-- Confirmation Message Display -->
+    <div id="demo" class="hidden">
+
+    </div>
+</section>
+
+<!-- Blogs Section-->
+ <section id="blogs" class="blogs">
+    <h2>Hair</h2>
+    <p>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+    </p>
+    <h2>Nail</h2>
+    <p>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+    </p>
+    <h2>Spa</h2>
+    <p> <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div></p>
+    <h2>others</h2>
+    <p> <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div></p>
+ </section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@salonbooking.com</p>
+    <p>Phone: +123 456 7890</p>
+    <p>Location: XXXxxxxxxxxxxxx</p>
+</section>
+
+<footer>
+    <p>&copy; 2023 Salon Booking. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
